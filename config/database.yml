@@ -21,8 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  host: localhost
-  encoding: unicode
-  username: juanpanasiti@gmail.com
-  password: yamivane89
+  <<: *default
+  database: db/production.sqlite3
