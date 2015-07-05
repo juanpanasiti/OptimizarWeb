@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+<%= link_to "Nuevo", new_article_path, class:'btn btn-default' %>
+<% end %>
+<div class="list-group">
+	<% @articles.each do |article| %>
+	<button type="button" class="list-group-item">
+		
+		<%= link_to article.title.titleize, article, class:'title' %>
+		<p>
+			<%= article.body.truncate(100) %> - <%= link_to "Eliminar", article, method: :delete, data: { confirm: '¿Seguro? ¡¡Después no podrás deshacerlo!!' }, class:'delete' %>
+		</p>
+		
+	</button>
+	<% end %>
+	<%= will_paginate @articles %>
+</div>

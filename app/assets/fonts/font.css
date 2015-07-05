@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Rockwell-Bold';
+  src: url('Rockwell-Bold.eot');
+  src: url('Rockwell-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Rockwell-Bold.woff2') format('woff2'),
+       url('Rockwell-Bold.woff') format('woff'),
+       url('Rockwell-Bold.ttf') format('truetype'),
+       url('Rockwell-Bold.svg#Rockwell-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

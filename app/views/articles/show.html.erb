@@ -1,0 +1,19 @@
+<h1 class=""><%= @article.title %></h1>
+<div class="field">
+	<% @article.categories.each do |category| %>
+		<%= link_to category.name, category %>
+	<% end %>
+</div>
+<p>
+	<%= Sanitize.fragment(@article.body, Sanitize::Config::RELAXED).html_safe %>
+</p>
+<div class="field">
+	<h3 class="comments-section">Comentarios</h3>
+	<%= render 'comments/form' %>
+	
+	<ul id="comments-box">
+		<% @article.comments.each do |comment|%>
+		<li><%= comment.body %> - <%= comment.user.email %></li>
+		<% end %>
+	</ul>
+</div>

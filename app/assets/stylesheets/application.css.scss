@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ html,body{
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: #E0F8EC !important;
+ }
+a.title,,a.title:visited {
+  color: black !important;
+  font-size: 2em;
+}
+a.title:hover{
+  text-decoration: blink;
+  background-color: transparent;
+}
+.list-group-item{
+  background-color: transparent !important;
+  border-style: none !important;
+  text-align: left;
+}
+ a,a:visited,a:hover{
+  color: inherit !important;
+  text-decoration: none;
+ }
+ @font-face {
+  font-family: 'Rockwell';
+  src: url('/fonts/Rockwell-Bold.eot');
+  src: url('/fonts/Rockwell-Bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Rockwell-Bold.woff2') format('woff2'),
+       url('/fonts/Rockwell-Bold.woff') format('woff'),
+       url('/fonts/Rockwell-Bold.ttf') format('truetype'),
+       url('/fonts/Rockwell-Bold.svg#Rockwell-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ .form-control2{
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 10px;
+  font-size: 1.2em;
+ }
+ .field{
+  margin-top: 1em;
+ }
+
+ #menu:first-child li:first-child {
+  float: left !important;
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+ }
+ #logo {
+   background: -webkit-gradient(linear, left top, left bottom, from(#02283d), to(#49a5bf));  
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+  font-size: 7em;
+  font-weight: bolder;
+  letter-spacing: -0.07em;
+  line-height: 0.7;
+ }
+ .logo-bar {
+  font-family: 'Rockwell';
+  text-align: center;
+  padding: 10px 0px 5px;
+ }
+ #slogan {
+  font-size: 2em;
+  margin: 0px;
+  padding: 0px;
+  font-style: oblique;
+ }
+ .no-margin {
+  margin: 0px;
+ }
+.be-black {
+  background-color: black !important;
+}
+
+.white{
+  color: white;
+}
+.no-float{
+  float: none;
+}
+a.delete,a.delete:hover {
+  color: red !important;
+  background-color: transparent;
+}
