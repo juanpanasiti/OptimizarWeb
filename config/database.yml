@@ -9,10 +9,10 @@ default: &default
   timeout: 5000
 
   adapter: postgresql
-  host: ec2-50-17-202-29.compute-1.amazonaws.com
+  host: ec2-54-197-255-248.compute-1.amazonaws.com
   encoding: unicode
-  username: pazefgqukcsrfc
-  password: t_MrOYO_Gw7aR8eV0CJUN-qNJj
+  username: ohpjpviagltphy
+  password: igH2QNQT0DbYcX6e7Et2-FT-FE
 
 development:
 adapter: sqlite3
@@ -31,4 +31,4 @@ test:
 
 production:
   <<: *default
-  database: d9s97r29nfhhdr
+  database: dbuc6cs9cv2dck
