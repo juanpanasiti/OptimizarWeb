@@ -43,6 +43,11 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+	gem 'pg', '~> 0.15.1'
+	gem 'rails_12factor', '~> 0.0.2'
+end
+
 # Added GEMs
 gem 'devise', '~> 3.5.1' # For authentication.
 gem 'jquery-turbolinks', '~> 2.1.0'
